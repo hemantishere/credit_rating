@@ -1,8 +1,7 @@
-CREATE DATABASE mortgage_db;
-
+CREATE DATABASE IF NOT EXISTS mortgage_db;
 USE mortgage_db;
 
-CREATE TABLE mortgages (
+CREATE TABLE IF NOT EXISTS mortgages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     credit_score INT NOT NULL,
     loan_amount FLOAT NOT NULL,
